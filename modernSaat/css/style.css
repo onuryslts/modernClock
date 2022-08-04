@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css?family-Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+}
+.bg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container{
+    position: relative;
+    background: silver;
+    border-radius: 20px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    
+}
+.clock{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    top: 10px;
+    border-radius: 50%;
+    box-shadow: 1px 5px 7px rgba(0,0,0,0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+
+}
+.clock::before{
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    background: #000;
+    border: 3px solid #000;
+    border-radius: 50%;
+    z-index: 100000;
+    
+}
+.clock span{
+    position: absolute;
+    inset: 1px;
+    color: #000;
+    text-align: center;
+    transform: rotate(calc(30deg * var(--i)));  
+}
+.circle {
+position: absolute;
+width: 200px;
+height: 200px;
+border-radius: 50%;
+display: flex;
+justify-content: center;
+align-items: flex-start;
+z-index: 10;
+}
+.circle i {
+    position: absolute;
+    width: 3px;
+    height: 50%;
+    background: var(--clr);
+    opacity: 0.75;
+    transform-origin: bottom;
+    transform: scaleY(0.5);
+
+}
+.circle:nth-child(1) i{
+    width: 1px;
+}
+.circle:nth-child(2) i{
+    width: 2px;
+}
+.circle2 {
+    width: 150px;
+    height: 150px;
+}
+.circle3 {
+        width: 100px;
+        height: 100px;
+    
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
